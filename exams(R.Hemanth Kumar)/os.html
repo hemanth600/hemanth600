@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name='osname' id='name'>
+        <input type="text" name='version' id='number'>
+        <button id='button'>Click</button>
+        <p id="demo"></p>
+    </form>
+    <script>
+        document.getElementById('button').addEventListener('click',myFunction);
+        function myFunction(){
+        var na = document.getElementById('name').value;
+        var num = document.getElementById('number').value;
+        if(na == 'Android' && num == '9') {
+        document.write('OS name is'+na);
+        document.write('OS version is'+num);
+        }
+        }
+    </script>
+</body>
+</html>
